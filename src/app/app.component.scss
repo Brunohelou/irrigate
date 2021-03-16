@@ -1,0 +1,137 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-icon{
+    color: black;
+    text-decoration: none;
+      margin-right: 10px;
+      border:solid;
+      border-color: rgb(82, 82, 82);
+      border-width: 1px;
+      padding: 7px;
+      font-size: 20px;
+      border-radius: 3px;
+
+  }
+
+  .example-icon:hover{
+    
+    color: white;
+    background-color:#18A999;
+    transition: background-color  0.3s;
+    
+}   
+
+.firstgrid{
+   
+ // background-image: url(https://lh3.googleusercontent.com/proxy/pE0W2UrFPf9AK3R08AAAcf-OOIDi1jXWXfYeo6kGt_ezUF3H2L1C6wtXDXYVkUb9LFIz76aBy4rp_N2FgvW0TDoBV0HeLCEdnU8rNiVljAkjx-J_OFz4P_4TGSzIb6V6wuLAEbeZdoX9H2K-ruFP6eM);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 40px;
+ background-image: url(https://aptirrigacao.com.br/wp-content/uploads/2016/05/irrigacao-orcamento.jpeg); 
+
+}
+
+
+
+a{
+  
+  
+}
+.cta1{
+  margin-top: 43vh;
+  text-decoration: none;
+  //text-decoration: none;
+  color: white;
+  border:solid;
+  border-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 25px;
+
+}
+
+
+.cta2{
+  margin-top: 43vh;
+  text-decoration: none;
+ 
+  color: white;
+  border:solid;
+  border-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #18A999;
+  font-size: 25px;
+
+}
+
+
+.cta3{
+  margin-top: 350px;
+  text-decoration: none;
+  
+  color: rgb(27, 27, 27);
+  border:solid;
+  border-color:#18A999;
+  padding: 20px;
+  border-radius: 3px;
+ border-width: 2px;
+  font-size: 25px;
+
+}
+
+.navbtn {
+  margin-top: 350px;
+  text-decoration: none;
+  color: black;
+}
+
+#contato{
+  background-image: url(https://www.wallpapertip.com/wmimgs/108-1088313_1920x1080-wallpaper-a-desk-microsoft-office-free-desktop.jpg);
+  background-size: cover;
+  color: rgb(63, 63, 63);
+}
+
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+
+input{
+  font-size: 2.5vh;
+
+  
+}
+
+
+#submit{
+  width: 270px;
+  text-decoration: none;
+  background-color:#18A999;
+  color: white;
+  border:solid;
+  border-color:white;
+  padding: 20px;
+  border-radius: 3px;
+ border-width: 2px;
+  font-size: 25px;
+}
+
+
+#submit:hover{
+  background-color: #45c9b9 ;
+  transition: 0.5s;
+
+}
