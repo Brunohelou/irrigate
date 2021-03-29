@@ -8,10 +8,17 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'irrigate';
-  
+  breakpoint:any;
 
-  
+  ngOnInit() {
+    console.log(window.innerWidth);
+    this.breakpoint = window.innerWidth/1000;
+    console.log(this.breakpoint);
+}
 
+onResize(event:any) {
+  this.breakpoint = window.innerWidth/900;
+}
 printed(name:string, phone: string, email: string, help: string) {
 
   console.log(name,phone,email,help);

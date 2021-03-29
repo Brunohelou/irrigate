@@ -7,99 +7,119 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-<mat-toolbar style="height:120px">
-  <span style="font-size: 2vw; margin-right: 20px; color: rgb(58, 58, 58);">LH Sistemas de Irrigação</span>
+<!--NAV BAR-->
+<body >
+<mat-toolbar style="height:120px; padding: 0;">
+ 
   
-  <img width="100vw" src='../assets/images/logo.png '>
+  <img style="width: calc(75px + 5vw);" src='../assets/images/logo.png ' alt="LH Logo">
   <span class="example-spacer"></span>
   <a   href="#grid1" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    início
+    Início
   </a>
   
   <a href="#contato" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
     Contato
   </a>
 
-  <a  href="#sobre" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <a  style="margin-right: 20px;" href="#sobre" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
     Sobre
   </a>
 </mat-toolbar>
 
-<mat-grid-list cols="1" rowHeight="600px" id="grid1">
-  <mat-grid-tile class="firstgrid" cols=2>
-    <div style=" position: absolute; top: 42vh; width:100vw; text-align: center; font-size: 3.0vw; color: rgb(240, 240, 240);" ><strong >Projetos de Irrigação para Jardins e plantações</strong></div>
+
+
+
+
+<!--1ST GRID-->
+<mat-grid-list  cols="1" rowHeight="600px" id="grid1">
+  <mat-grid-tile class= "image1" cols=2 style="text-align: center;">
+    <div><h1 style="font-size:calc(20px + 1.5vw); margin-bottom: 100px;">Irrigação para Jardins, Agricultura e Despoeiramento</h1>
+    
+ 
     <a href="#grid1" class="cta1" style="margin-right: 20px;">PORTFÓLIO</a>
-    <a href="#orcamento" class="cta2" style="margin-left:20px;">ORÇAMENTO</a>
+    <a href="#contato" class="cta2" style="margin-left:20px;">ORÇAMENTO</a>
+  </div>
   </mat-grid-tile>
 </mat-grid-list>
 
 
 
-<mat-grid-list id="sobre" cols="2" rowHeight="600px" style="vertical-align: top;">
-  <h1 style="text-align: center; margin-top: 30px;"><strong><u>SOBRE A LH IRRIGAÇÕES</u></strong></h1>
-  <mat-grid-tile  style="margin-left: 40px; text-justify:inter-word; text-align: justify; vertical-align: top;"> <div style="width: 80%;"> At vero eos et accusamus et 
-    iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-     excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
-      et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-       optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
-         et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
-          alias consequatur aut perferendis doloribus asperiores repellat."</div>
-  
-          
-  </mat-grid-tile>
 
-  <mat-grid-tile><img  style="border-radius: 10px; width: 20vw; height: 20vw ;" src="../assets/images/irr.jpg">
-     
-  
+<!--2nd GRID-->
+<mat-grid-list id="sobre" cols="1" rowHeight="600px" style="vertical-align: top;">
+  <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;">
+
+   <div style="margin-left: 10%; margin-right: 10%;">
+    <h1 style=" color: rgb(48, 48, 48); font-size:calc(20px + 1.0vw); margin-bottom: 50px; text-align: center;">Quem Somos</h1>  
+    A LH Sistemas de Irrigação é uma empresa dedicada a projetos, instalações e manutenção de sistemas de irrigação.
+Na irrigação residencial estamos preparados para implantar sistema de aproveitamento de água de chuva integrado com o sistema de irrigação.
+Na irrigação comercial somos capacitados a estudar o melhor custo-benefício na implantação de irrigação por pivô central, carretel, aspersão de baixo volume e gotejamento.
+
+          <div style="margin-top: 40px; text-align: center;">
+            <a href="#grid1"  style="font-size: 100%;font-size: calc(6px + 20%)!important;" class="cta3" >BAIXAR PORTFÓLIO</a>
+            <a style="margin-left: 10px; font-size: 100%; font-size:calc(6px + 20%)!important;" href="#contato" class="cta2" >QUERO UM PROJETO</a>
+          </div>
+        </div>   
+        
   </mat-grid-tile>
+  
  
   
   
 </mat-grid-list>
-<div style="margin-left: 110px;">
-  <a href="#grid1"  style="font-size: 100%;" class="cta3" >BAIXAR PORTFÓLIO</a>
-  <a style="margin-left: 10px; font-size: 100%;" href="#orcamento" class="cta2" >QUERO UM PROJETO</a>
+
+
+<!--3rd GRID-->
+
+<mat-grid-list  cols="1" rowHeight="fit" (window:resize)="onResize($event)" style="vertical-align: top; background-color: rgb(235, 235, 235); padding-top: 30px;">
+  <h1 style=" color: rgb(48, 48, 48); font-size:calc(20px + 1.0vw); text-align: center; margin-bottom: o;">Cases & clientes</h1>  
+  <div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <!--FIRST CELL-->
+   <div class="gallery-cell">
+    <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)" >
+      <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;"> <div style="width: 80%;"> 
+        <h2 style="text-align: center;" >Atlético Sorocaba</h2>
+        <p class="pgllery">Executamos a revisão geral do sistema de irrigação do campo 1 devolvendo ao sistema a condição operacional automatizada. O Atlético Sorocaba é uma equipe de futebol profissional
+            que precisa manter sempre boas condições de gramado para o jogo. para isso foram necessários a utilização de x dispersores e y controladores via wi-fi para garantir que os temporiza
+            dores estivessem sempre funcionando. Com isso, há economia real nos custos de manutenção do campo, aumentando a longevidade do gramado e otimizando o consumo de água</p></div>
+      </mat-grid-tile>
+      <mat-grid-tile><div class="image2"><img  style="border-radius: 10px; width: calc(300px + 20vw); height: calc(150px + 10vw);" src="../assets/images/atl.jpg"></div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+    <!--Sec CELL-->
+  
+    <div class="gallery-cell">
+      <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)" >
+        <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;"> <div style="width: 80%;"> 
+          <h2 style="text-align: center;" >Atlético Sorocaba</h2>
+      
+          <p class="pgallery">Executamos a revisão geral do sistema de irrigação do campo 1 devolvendo ao sistema a condição operacional automatizada. O Atlético Sorocaba é uma equipe de futebol profissional
+        que precisa manter sempre boas condições de gramado para o jogo. para isso foram necessários a utilização de x dispersores e y controladores via wi-fi para garantir que os temporiza
+      dores estivessem sempre funcionando. Com isso, há economia real nos custos de manutenção do campo, aumentando a longevidade do gramado e otimizando o consumo de água</p></div>
+             
+        </mat-grid-tile>
+        <mat-grid-tile><div class="image2"> <img  style="border-radius: 10px; width: calc(300px + 15vw); height: calc(150px + 10vw);" src="../assets/images/atl.jpg"></div>
+        </mat-grid-tile>
+  
+  
+  
+  </mat-grid-list>
+  </div>
 </div>
-
-
-
-<mat-grid-list cols="2" rowHeight="600px" style="vertical-align: top; background-color: rgb(235, 235, 235);">
-  <h1 style="text-align: center; margin-top: 100px; padding-top: 20px;"><strong><u>CASES & CLIENTES</u></strong></h1>
-  <mat-grid-tile  style="margin-left: 40px; text-justify:inter-word; text-align: justify; vertical-align: top;"> <div style="width: 80%;"> 
-    <h1>Atlético Sorocaba</h1>
-    At vero eos et accusamus et 
-    iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-     excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
-      et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-       optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
-         et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
-          alias consequatur aut perferendis doloribus asperiores repellat."</div>
-  
-          
-  </mat-grid-tile>
-
-  <mat-grid-tile><img  style="border-radius: 10px; width: 80%; height: 20vw ;" src="../assets/images/atl.jpg">
-     
-  
-  </mat-grid-tile>
- 
-  
   
 </mat-grid-list>
 
 
-<mat-grid-list id="contato" cols="2" rowHeight="600px" >
-  
 
-  <mat-grid-tile style="text-align: center;" ><div style="padding-top: 8px; padding-left: 8px; background-color: rgba(255, 255, 255, 0.753); margin-left: 22vw; text-align: center; box-shadow: 1 7 8 8; border-radius: 7px;">
-    <h1 style="text-align:left;  font-size: 4vh;" >Preencha o formulário ao lado que entraremos em contato</h1></div>
- </mat-grid-tile>
-  
-  <mat-grid-tile>
-    <form  action="https://formspree.io/f/mvovedlv" method="POST">
+<!--CONTAT US-->
+<mat-grid-list id="contato" cols="1" rowHeight="700px" >
+  <mat-grid-tile class="row" style="text-align: center;">
+    
+    <form style="color: white;"  action="https://formspree.io/f/mvovedlv" method="POST">
+      <h1  style="text-align: center; font-size:calc(20px + 1.5vw);">Entre em Contato!</h1>
       <label style="color: white;" for="fname">Nome</label><br>
       <input type="text" id="nome" name="nome" ><br>
 
@@ -110,17 +130,15 @@
       <input type="email" id="email" name="email" ><br>
       
       <label style="color: white;" for="texto">Como podemos ajudar?</label><br>
-      <textarea style="width: 272px; height: 200px;" id="texto" name="texto"> </textarea><br>
+      <textarea style="min-width: 400px; width: 40vw; max-width: 40vw; max-height: 20px; min-height: 200px;" id="texto" name="texto"> </textarea><br>
       <br>
     
       <!-- your other form fields go here -->
     
-      <button id="submit" type="submit">Send</button> 
+      <button style="min-width: 400px; width: 40vw;" id="submit" type="submit">Enviar</button> 
     </form>
     
   </mat-grid-tile>
-  
-  
 </mat-grid-list>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -131,7 +149,5 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-
 <router-outlet></router-outlet>
-
+</body>

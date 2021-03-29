@@ -9,6 +9,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     MatGridListModule,
     MatFormFieldModule,
+    MatCarouselModule.forRoot(),
     
   ],
   providers: [],
