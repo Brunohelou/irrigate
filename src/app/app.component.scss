@@ -63,10 +63,13 @@ body{
   padding: 20px;
   border-radius: 3px;
   font-size: calc(10px + 1vw);
- 
-
 }
 
+
+.cta1:hover{
+  background-color: #18A999;
+  transition: background-color 1.5s linear;
+}
 
 .cta2{
   margin-top: 43vh;
@@ -166,7 +169,7 @@ input {
 
 
 .image1{
-  background: rgba(39, 84, 65, 0.226);
+  background: rgba(39, 84, 65, 0);
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -178,7 +181,9 @@ input {
 
 
 
-
+.listContainer{
+  text-align: left
+}
 
 
 
@@ -214,10 +219,12 @@ input {
 }
 
 
+
 .myGridList{
   vertical-align: top; 
   background-color: rgb(235, 235, 235);
 }
+
 
 
 .pgallery{
@@ -225,10 +232,20 @@ input {
   margin-bottom: 0;
 }
 
+ul{
+  width: 80%;
+  list-style-type: none;
+  text-align: center;
+}
 
 
 .imggalery{
   border-radius: 10px;
    width: calc(300px + 20vw);
    height: calc(150px + 20vw);
+}
+.listH2{
+  padding:7px;
+  background-color:#18A999;
+  color: white;
 }
