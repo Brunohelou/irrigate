@@ -66,9 +66,10 @@ body{
 }
 
 
-.cta1:hover{
-  background-color: #18A999;
-  transition: background-color 1.5s linear;
+.cta1:hover,  .cta3:hover, .cta2:hover, .cta4:hover{
+  background-color: #45c9b9;
+  transition: background-color 0.2s linear;
+  color: white;
 }
 
 .cta2{
@@ -86,18 +87,37 @@ body{
 }
 
 
+
+
+
+
 .cta3{
-  margin-top: 350px;
+  margin-top: 43vh;
   text-decoration: none;
-  
-  color: rgb(27, 27, 27);
+  //text-decoration: none;
+  color: #18A999;
   border:solid;
-  border-color:#18A999;
+  border-color: #18A999;
   padding: 20px;
   border-radius: 3px;
- border-width: 2px;
- font-size: calc(10px + 1vw);
+  font-size: calc(10px + 1vw);;
   
+}
+
+
+
+.cta4{
+  margin-top: 43vh;
+  text-decoration: none;
+ 
+  color: white;
+  border:solid;
+  border-color: #18A999;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #18A999;
+  font-size: calc(10px + 1vw);
+
 }
 
 
@@ -121,13 +141,15 @@ body{
 
 
 form{
-  text-align: left;
+  text-align: center;
  
 }
 
-input {
- width: 40vw;
- min-width: 400px;
+
+.inputData {
+ width: 90%;
+ min-width: 200px;
+ max-width: 800px;
  font-size: 18px;
  min-height: 30px;
  margin-bottom: 20px;
@@ -135,10 +157,11 @@ input {
 
 .myGridList {
   height: 100%;
+  
 }
 
 #submit{
-  width: 270px;
+ 
   text-decoration: none;
   background-color:#18A999;
   color: white;
@@ -146,14 +169,26 @@ input {
   border-color:white;
   padding: 20px;
   border-radius: 3px;
- border-width: 2px;
+  border-width: 2px;
   font-size: 25px;
+  min-width: 200px;
+  width:80vw;
+  max-width: 800px;
+}
+
+#texto{
+  text-align: center; 
+  min-width: 200px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 20px;
+  min-height: 100px;
 }
 
 
 #submit:hover{
   background-color: #45c9b9 ;
-  transition: 0.5s;
+  transition: 0.3s;
 
 }
 
@@ -162,7 +197,7 @@ input {
   background: rgba(39, 62, 84, 0.733);
     overflow: hidden;
     height: 100%;
-    width: 100%;
+    width: 80%;
     z-index: 2;
 }
 
@@ -236,6 +271,7 @@ ul{
   width: 80%;
   list-style-type: none;
   text-align: center;
+  padding-left: 0;
 }
 
 
@@ -246,6 +282,54 @@ ul{
 }
 .listH2{
   padding:7px;
+  margin-bottom: 30px;
   background-color:#18A999;
   color: white;
 }
+
+.galleryH2{
+ width: fit-content;
+  padding:7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color:#18A999;
+  color: white;
+}
+
+
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+.matGridPort{
+  margin-bottom: 120px;
+}
+
+
+.flickity-viewport{
+  height: 1000px!important;
+
+}
+
+.carousel-cells{
+  width: 100%!important;
+}
+
+
