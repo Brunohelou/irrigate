@@ -35,6 +35,19 @@ html {
     
 }   
 
+#grid4{
+  background-size: cover;
+  background-image:linear-gradient(rgba(196, 170, 85, 0.24), rgba(194, 186, 165, 0.205)), 
+    url(../assets/images/garden.jpg); 
+  background-position: center;
+
+}
+
+#grid2{
+ 
+
+}
+
 #grid1{
    
  // background-image: url(https://lh3.googleusercontent.com/proxy/pE0W2UrFPf9AK3R08AAAcf-OOIDi1jXWXfYeo6kGt_ezUF3H2L1C6wtXDXYVkUb9LFIz76aBy4rp_N2FgvW0TDoBV0HeLCEdnU8rNiVljAkjx-J_OFz4P_4TGSzIb6V6wuLAEbeZdoX9H2K-ruFP6eM);
@@ -42,7 +55,9 @@ html {
 
   color: white;
   font-size: 40px;
- background-image: linear-gradient(rgba(71, 71, 71, 0.514), rgba(177, 255, 194, 0.432)), url(https://aptirrigacao.com.br/wp-content/uploads/2016/05/irrigacao-orcamento.jpeg); 
+ background-image:  
+    url(https://i.giphy.com/media/7Xp6WZXFADXkkP7z9X/giphy.webp); 
+ background-position: center;
  
 
 }
@@ -88,7 +103,9 @@ body{
 
 
 
-
+li{
+  font-size: 15px;
+}
 
 
 .cta3{
@@ -157,7 +174,26 @@ form{
 
 .myGridList {
   height: 100%;
+  overflow: visible;
   
+}
+
+
+#footer{
+  display: block;
+  position: relative;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  height: 210px;
+  background-image :linear-gradient(to right,  #18A999,#3ebdae,  #52b9ad) ;
+}
+
+#footer div{
+  width: 30%;
+  height: 90%;
+  display: inline-block;
 }
 
 #submit{
@@ -257,10 +293,13 @@ form{
 
 .myGridList{
   vertical-align: top; 
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  
 }
 
-
+mat-grid-tile{
+  overflow: visible!important;
+}
 
 .pgallery{
   
@@ -332,4 +371,20 @@ ul{
   width: 100%!important;
 }
 
+
+::ng-deep #grid2 .mat-grid-tile .mat-figure{
+ align-items: baseline;
+ padding-top: 60px;
+}
+
+
+::ng-deep #carousel .mat-grid-tile .mat-figure{
+  align-items: baseline;
+  padding-top: 60px;
+ }
+
+ .ulCard {
+  background-color: rgba(255, 255, 255, 0.781);
+  padding-bottom: 40px;
+ }
 

@@ -8,255 +8,323 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!--NAV BAR-->
-<body >
-  <a href="https://api.whatsapp.com/send?phone=5515997202222&text=Ol%C3%A1!"
- class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
 
-
-<mat-toolbar style="height:120px; padding: 0;">
- 
-  
-  <img style="width: calc(75px + 5vw);" src='../assets/images/logo.png ' alt="LH Logo">
-  <span class="example-spacer"></span>
-  <a   href="#grid1" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    Início
-  </a>
-  
-  <a href="#contato" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    Contato
+<body>
+  <a href="https://api.whatsapp.com/send?phone=5515997202222&text=Ol%C3%A1!" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
   </a>
 
-  <a  style="margin-right: 20px;" href="#sobre" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    Sobre
-  </a>
-</mat-toolbar>
+
+  <mat-toolbar style="height:120px; padding: 0; background-color: white;">
+
+
+    <img style="width: calc(75px + 5vw);" src='../assets/images/logo.png ' alt="LH Logo">
+    <span class="example-spacer"></span>
+
+    <div style="margin: 0; padding:0">
+      <a href="#grid1" mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon">
+        Início
+      </a>
+
+      <a href="#contato" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        Contato
+      </a>
+
+      <a style="margin-right: 20px;" href="#sobre" mat-icon-button class="example-icon"
+        aria-label="Example icon-button with share icon">
+        Sobre
+      </a>
+    </div>
+
+    <!--  Future implement  <div *ngIf="!phone" style="color: rgb(59, 59, 59);">
+  LH Sistemas de Irrigação
+</div>
+-->
+
+  </mat-toolbar>
 
 
 
 
 
-<!--1ST GRID finished (find a coll gif)-->
-<mat-grid-list  cols="1" rowHeight="600px" id="grid1">
-  <mat-grid-tile class= "image1" cols=2 style="text-align: center;">
-    <div style="width: 95%;"><h1 style="font-size:calc(20px + 1.5vw); margin-bottom: 100px;">Irrigação para Jardins, Agricultura e Despoeiramento</h1>
-    
- 
-    <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66" class="cta1" style="margin-right: 20px;">PORTFÓLIO</a>
-    <a href="#contato" class="cta2" style="margin-left:20px;">ORÇAMENTO</a>
-  </div>
-  </mat-grid-tile>
-</mat-grid-list>
+  <!--1ST GRID finished (find a coll gif)-->
+  <mat-grid-list cols="1" rowHeight="700px" id="grid1">
+    <mat-grid-tile class="image1" cols=2 style="text-align: center;">
+      <div style="width: 85%; vertical-align: middle; height: 70%; display: flex; align-items: center; border-radius: px; background-color: #18a99881; border-style: solid; border-color: white; border-width: 2px;">
+        <div style="text-align: center; display: inline-block; vertical-align: middle; width: 100%;">
+        <h1 style="font-size:calc(20px + 1.5vw); margin-bottom: 100px;">Irrigação para Jardins, Agricultura e
+          Despoeiramento</h1>
 
 
-
-
-<!--2nd GRID FINISHED-->
-<mat-grid-list id="sobre" cols="1" [rowHeight]="gridTwo"  style="vertical-align: top;">
-  <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;">
-
-   <div style="margin-left: 10%; margin-right: 10%;">
-    <h1 style=" color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw); margin-bottom: 60px; text-align: center;">Quem Somos</h1> 
-
-    <span>
-    A LH Sistemas de Irrigação é uma empresa localizada em Sorocaba-SP (interior de São Paulo) dedicada a projetos, instalações e manutenção de sistemas de irrigação.
-    Somos representantes da marca RainBird, contando com tecnologias de ponta e com o IoT (internet das coisas) para controloar o seu sistema de irrigação remotamente.
-    Com essa tecnologia em nosso portfólio, estamos aptos a atender irrigação de paisagismo, campos de futebol, golfe, quadras de tênis, agricultura com irrigação de
-    baixo volume e despoeiramento de currrais e mineradoras.
-
-    Temos como prioridade solucionar os problemas de nossos clientes sempre com base nas necessidades apresentadas, de forma personalizada com profissionalismo e dedicação,
-    desenvolvendo o projeto com melhor custo-benefício para a realidade de cada cliente.
-  </span>
-          <div style="margin-top: 80px; text-align: center;">
-            <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66" class="cta3" style="margin-right: 20px;">PORTFÓLIO</a>
-            <a href="#contato" class="cta4" style="margin-left:20px;">ORÇAMENTO</a>
-          </div>
-        </div>   
-        
-  </mat-grid-tile>
-  
- 
-  
-  
-</mat-grid-list>
-
-
-<!--3rd GRID-->
-
-
-  <mat-grid-list rowHeight="fit">
-    <h1 style=" background-color: #ebebeb;  color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw);
-     text-align: center; padding-bottom:10px; padding-top: 10px; margin-bottom: 0;">Benefícios da Irrigação</h1> 
-  
-
-  <carousel style="height: calc(1100px -  30vw );" cellWidth="100%" >
-    
-  <!--FIRST CELL-->
-   <div class="carousel-cell">
-    <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)" >
-      <mat-grid-tile rowspan="1" style=" text-justify:inter-word; text-align: justify;"> <div style="width: 80%;"> 
-        <h2 class="galleryH2" >Clube Atlético Sorocaba</h2>
-        <h3>Revisão do sistema de irrigação do campo</h3>
-        <p class="pgllery">Atlético Sorocaba é um centro de treinamento para equipes de futebol. Quando entraram em contato estavam com problemas de vazamento e tubulação,
-          equipamentos danificados como a vávula do solenóide e os controladores, ocasionando surpresas indesejadas na hora de realizar a irrigação, causando danos ao gramado e 
-          alto custo de manutenção corretiva.
-          Para melhor as condições do campo, 
-          instalamos um novo controlador, ralizando a troca de tubulação e substituindo a válvula solenóide. Com isso o clube mantém sempre ótimas condições para os atletas
-          treinarem com custo reduzido para a manutenção do bom estado do gramado.
-
-        </p></div>
-      </mat-grid-tile>
-      <mat-grid-tile ><img   style="border-radius: 10px; width: 60%; height: calc(150px + 10vw);   vertical-align: top;" src="../assets/images/atl.jpg">
-      </mat-grid-tile>
-    </mat-grid-list>
-  </div>
-    <!--Sec CELL-->
-  
-    <div class="carousel-cell">
-      <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)" >
-        <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;"> <div style="width: 80%;"> 
-          <h2 class="galleryH2">Residência Lago Azul</h2>
-          <h3>Vazamento nos aspersores</h3>
-          <p class="pgllery">O cliente entrou em contato constatando que os aspersores de um campo de futebol particular não estavam funcionando. Após a visita técnica constatamos
-             um gramado seco. Para resolevr o problema, foram implatados os apersores da RainBird, que por sua qualidade permitem o bom funcionamento do equipamento com 
-            maior durabilidade.
-  
-          </p></div>
-        </mat-grid-tile>
-        <mat-grid-tile><div style="text-align: center;"> <img  style="border-radius: 10px; width: 60%; height: calc(150px + 10vw);" src="../assets/images/LagoAzul.jpeg"></div>
-        </mat-grid-tile>
-  
-  
-  
+        <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66"
+          class="cta1" style="margin-right: 0px;">PORTFÓLIO</a>
+        <a href="#contato" class="cta2" style="margin-left:20px;">ORÇAMENTO</a>
+      </div>
+    </div>
+    </mat-grid-tile>
   </mat-grid-list>
+
+
+
+
+  <!--2nd GRID FINISHED-->
+  <mat-grid-list id="grid2" cols="1" [rowHeight]="gridTwo" style="vertical-align: top;">
+    <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
+
+      <div style="margin-left: 10%; margin-right: 10%; align-items: baseline!important; width: calc(600px);">
+        <h1 style=" color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw); margin-bottom: 60px; text-align: center;">Quem
+          Somos</h1>
+
+        <span>
+          A LH Sistemas de Irrigação é uma empresa localizada em Sorocaba-SP (interior de São Paulo) dedicada a
+          projetos, instalações e manutenção de sistemas de irrigação.
+          Somos representantes da marca RainBird, contando com tecnologias de ponta e com o IoT (internet das coisas)
+          para controloar o seu sistema de irrigação remotamente.
+          Com essa tecnologia em nosso portfólio, estamos aptos a atender irrigação de paisagismo, campos de futebol,
+          golfe, quadras de tênis, agricultura com irrigação de
+          baixo volume e despoeiramento de currrais e mineradoras.
+
+          Temos como prioridade solucionar os problemas de nossos clientes sempre com base nas necessidades
+          apresentadas, de forma personalizada com profissionalismo e dedicação,
+          desenvolvendo o projeto com melhor custo-benefício para a realidade de cada cliente.
+        </span>
+        <div style="margin-top: 80px; text-align: center;">
+          <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66"
+            class="cta3" style="margin-right: 20px;">PORTFÓLIO</a>
+          <a href="#contato" class="cta4" style="margin-left:20px;">ORÇAMENTO</a>
+        </div>
+      </div>
+
+    </mat-grid-tile>
+
+
+
+
+  </mat-grid-list>
+
+
+  <!--3rd GRID-->
+
+
+  <mat-grid-list id="carousel" rowHeight="fit">
+    <h1 style=" background-color: #ffffff;  color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw);
+     text-align: center; padding-bottom:10px; padding-top: 10px; margin-bottom: 0;">Cases & Clientes</h1>
+
+
+    <carousel cellWidth="100%">
+
+      <!--FIRST CELL-->
+      <div class="carousel-cell">
+        <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit">
+          <mat-grid-tile  rowspan="1" style=" text-justify:inter-word; text-align: justify;">
+            <div style="width: 80%; overflow: visible ;">
+              <h2 class="galleryH2">Clube Atlético Sorocaba</h2>
+              <h3>Revisão do sistema de irrigação do campo</h3>
+              <p class="pgllery" >Atlético Sorocaba é um centro de treinamento para equipes de futebol. Quando entraram 
+                em contato estavam com problemas de vazamento e tubulação, equipamentos danificados como a vávula do solenóide e os controladores, ocasionando surpresas
+                indesejadas na hora de realizar a irrigação, causando danos ao gramado e alto custo de manutenção corretiva.
+                Para melhor as condições do campo,
+                instalamos um novo controlador, ralizando a troca de tubulação e substituindo a válvula solenóide. Com
+                isso o clube mantém sempre ótimas condições para os atletas
+                treinarem com custo reduzido para a manutenção do bom estado do gramado.
+
+              </p>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile rowspan="1" class="tileImage"><img
+              style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
+              src="../assets/images/atl.jpg">
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <!--Sec CELL-->
+
+      <div class="carousel-cell">
+        <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)">
+          <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
+            <div style="width: 80%;">
+              <h2 class="galleryH2">Residência Lago Azul</h2>
+              <h3>Vazamento nos aspersores</h3>
+              <p class="pgllery">O cliente entrou em contato constatando que os aspersores de um campo de futebol
+                particular não estavam funcionando. Após a visita técnica constatamos
+                um gramado seco. Para resolevr o problema, foram implatados os apersores da RainBird, que por sua
+                qualidade permitem o bom funcionamento do equipamento com
+                maior durabilidade.
+
+              </p>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align: center;"> <img
+                style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
+                src="../assets/images/LagoAzul.jpeg"></div>
+          </mat-grid-tile>
+
+
+
+        </mat-grid-list>
+      </div>
+
+      <!-- Third CELL-->
+      <div class="carousel-cell">
+        <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)">
+          <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
+            <div style="width: 80%;">
+              <h2 class="galleryH2"> Residencial Vale do Lago</h2>
+              <h3>Vazamento nos aspersores</h3>
+              <p class="pgllery">O cliente entrou em contato dizendo que seu sistema hidráulico apresentava falta de
+                água para fazer seu sistema de irrigação funcionar, sendo necessário
+                irrigar com trabalho braçal constantemente. Ao realizar a visita técnica, constatamos que o controlador
+                estava queimado, mas além disso o sistema hdiráulico estava com ar
+                na tubulação, o que foi corrigido na hora. Para resolver o problema do controlador, foi feita a
+                substituição por um da marca RainBird setorizado,
+                possibilitando o acionamento em difrentes setores separadamente, automatizando a irrigação.
+
+              </p>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align: center;"> <img
+                style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
+                src="../assets/images/casaRoberto.jpeg"></div>
+          </mat-grid-tile>
+
+
+
+        </mat-grid-list>
+      </div>
+    </carousel>
+
+  </mat-grid-list>
+
+
+  <!--4th GRID-->
+
+
+  <mat-grid-list [cols]="breakpoint1" [rowHeight]="listHeight/3" (window:resize)="onResize($event)" id="grid4"
+    style="vertical-align: top; background-color: rgb(255, 255, 255); padding-top: 30px;">
+
+    <div class="listContainer">
+
+
+      <mat-grid-tile [colspan]="breakpoint1" class="matGridPort" style="height: 100px;">
+        <h1 class="listH2" style=" color: rgb(238, 238, 238); font-size:calc(20px + 1.0vw); text-align: center; margin-bottom:0">
+          Benefícios da Irrigação</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="matGridPort" rowspan="3">
+        <ul class="ulCard">
+          <h2 class="listH2">Residencial</h2>
+          <h3>Diminuição com gasto de tempo e dinheiro</h3>
+          <li>Ambientes mais agradáveis e humidificados</li>
+          <li>Menos esforço para cuidar do seu jardim</li>
+          <li>Redução do consumo de água</li>
+        </ul>
+      </mat-grid-tile>
+
+      <mat-grid-tile class="matGridPort" rowspan="3">
+        <ul class="ulCard" > 
+          <h2 class="listH2">Rural</h2>
+          <h3>Aumento da produtividade</h3>
+          <li>Evita doenças como as respiratórias, do Gado</li>
+          <li>Aumento na produtividade</li>
+          <li>Colheita fora da época de safra</li>
+        </ul>
+      </mat-grid-tile>
+
+      <mat-grid-tile class="matGridPort" rowspan="3">
+        <ul class="ulCard">
+          <h2 class="listH2">Industrial</h2>
+          <h3>Aumento da produtividade</h3>
+          <li>Remove do ar residuos sólidos e partículas nocivas a saúde</li>
+          <li>melhoria das condições de trabalho e da comunidade no entorno</li>
+          <li>aumento da disponibilidade física dos colaboradores</li>
+        </ul>
+      </mat-grid-tile>
+    </div>
+
+  </mat-grid-list>
+
+
+
+
+
+
+
+  <!--CONTAT US -->
+  <!--Formulário finalizado, falta apenas  o whatsApp btn-->
+  <mat-grid-list id="contato" cols="1" rowHeight="700px">
+    <mat-grid-tile class="row" style="text-align: center;">
+
+      <form style="color: white;" action="https://formspree.io/f/mvovedlv" method="POST">
+        <h1 style="text-align: center; font-size:calc(20px + 1.5vw);">Entre em Contato!</h1>
+        <label style="color: white;" for="fname">Nome</label><br>
+        <input class="inputData" type="text" id="nome" name="nome"><br>
+
+        <label style="color: white;" for="telefone">Telefone</label><br>
+        <input class="inputData" type="text" id="telefone" name="telefone"><br>
+
+        <label style="color: white;" for="lname">Email</label><br>
+        <input class="inputData" type="email" id="email" name="email"><br>
+
+        <label style="color: white;" for="texto">Como podemos ajudar?</label><br>
+        <textarea id="texto" name="texto"> </textarea><br>
+        <br>
+
+        <!-- your other form fields go here -->
+
+        <br>
+        <input type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" /><span><u>
+            Concordo que a LH Irrigação pode utilizar meus dados informados no formulário para entrar em contato comigo
+            e que é de meu interesse</u>
+        </span>
+        <br>
+        <br>
+
+
+
+        <button mat-button disabled="true" id="submit" type="submit">Enviar</button>
+
+      </form>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+
+  <!--Footer-->
+
+  <div *ngIf="phone" id="footer">
+    <div style="float: left;">
+      <img style="width: auto; height: 60%;" src='../assets/images/logo.png ' alt="LH Logo">
+      <p>CNPJ: xxxxxxx/xxxx</p>
+    </div>
+    <div style="float: none;">
+      <h2>FALE CONOSCO</h2>
+      <p>Celular: (15) 99702-6211</p>
+      <p>Email: lhelou@irriga.com</p>
+      <p>Endereço:Rua Castanheira, Votorantim, Jardim Aldeia da Mata, 18116-745</p>
+    </div>
+    <div style="float: right;">
+      <h2>Social media</h2>
+
+      <p><a href="" style="text-decoration: none; color: white;"> <u>Instagram</u></a></p>
+    </div>
+
+
+    <p><a href="https://github.com/Brunohelou" style="text-decoration: none; color: white;"><u>Desenvolvido por: Bruno
+          Helou</u></a></p>
   </div>
 
-  <!-- Third CELL-->
-  <div class="carousel-cell">
-    <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)" >
-      <mat-grid-tile  style=" text-justify:inter-word; text-align: justify;"> <div style="width: 80%;"> 
-        <h2 class="galleryH2"> Residencial Vale do Lago</h2>
-        <h3>Vazamento nos aspersores</h3>
-        <p class="pgllery">O cliente entrou em contato dizendo que seu sistema hidráulico apresentava falta de água para fazer seu sistema de irrigação funcionar, sendo necessário
-    irrigar com trabalho braçal constantemente. Ao realizar a visita técnica, constatamos que o controlador estava queimado, mas além disso o sistema hdiráulico estava com ar 
-          na tubulação, o que foi corrigido na hora. Para resolver o problema do controlador, foi feita a substituição por um da marca RainBird setorizado,
-          possibilitando o acionamento em difrentes setores separadamente, automatizando a irrigação.
-
-        </p></div>
-      </mat-grid-tile>
-      <mat-grid-tile><div style="text-align: center;"> <img  style="border-radius: 10px; width: 60%; height: calc(150px + 10vw);" src="../assets/images/casaRoberto.jpeg"></div>
-      </mat-grid-tile>
 
 
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+  <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-</mat-grid-list>
-</div>
-</carousel>
-
-</mat-grid-list>
-
-
-<!--4th GRID-->
-
-
-<mat-grid-list  [cols]="breakpoint1" [rowHeight]="listHeight/3" (window:resize)="onResize($event)"  style="vertical-align: top; background-color: rgb(255, 255, 255); padding-top: 30px;">
-  
-  <div class="listContainer" >
-
-
-    <mat-grid-tile [colspan]="breakpoint1" class="matGridPort" style="height: 100px;">
-    <h1 style=" color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw); text-align: center; margin-bottom:0">Benefícios da Irrigação</h1>  
-  </mat-grid-tile>
-    <mat-grid-tile class="matGridPort" rowspan="3" >
-      <ul>
-        <h2 class="listH2" >Residencial</h2>
-        <h3>Diminuição com gasto de tempo e dinheiro</h3>
-        <li>Ambientes mais agradáveis e humidificados</li>
-        <li>Menos esforço para cuidar do seu jardim</li>
-        <li>Redução do consumo de água</li>
-      </ul>
-    </mat-grid-tile>
-
-    <mat-grid-tile class="matGridPort" rowspan="3" >  
-      <ul>
-        <h2 class="listH2">Rural</h2>
-        <h3>Aumento da produtividade</h3>
-        <li>Evita doenças como as respiratórias, do Gado</li>
-        <li>Aumento na produtividade</li>
-        <li>Colheita fora da época de safra</li>
-      </ul>
-    </mat-grid-tile>
-
-    <mat-grid-tile class="matGridPort" rowspan="3" >
-      <ul>
-        <h2 class="listH2">Industrial</h2>
-        <h3>Aumento da produtividade</h3>
-        <li>Remove do ar residuos sólidos e partículas nocivas a saúde</li>
-        <li>melhoria das condições de trabalho e da comunidade no entorno</li>
-        <li>aumento da disponibilidade física dos colaboradores</li>
-      </ul>
-</mat-grid-tile>
-</div>
-  
-</mat-grid-list>
-
-
-
-
-
-
-
-<!--CONTAT US -->
-<!--Formulário finalizado, falta apenas  o whatsApp btn--> 
-<mat-grid-list id="contato" cols="1" rowHeight="700px" >
-  <mat-grid-tile class="row" style="text-align: center;">
-    
-    <form style="color: white;"  action="https://formspree.io/f/mvovedlv" method="POST">
-      <h1  style="text-align: center; font-size:calc(20px + 1.5vw);">Entre em Contato!</h1>
-      <label style="color: white;" for="fname">Nome</label><br>
-      <input class="inputData" type="text" id="nome" name="nome" ><br>
-
-      <label style="color: white;" for="telefone">Telefone</label><br>
-      <input class="inputData" type="text" id="telefone" name="telefone" ><br>
-
-      <label  style="color: white;" for="lname">Email</label><br>
-      <input class="inputData" type="email" id="email" name="email" ><br>
-      
-      <label style="color: white;" for="texto">Como podemos ajudar?</label><br>
-      <textarea  id="texto" name="texto"> </textarea><br>
-      <br>
-    
-      <!-- your other form fields go here -->
-      
-      <br>
-      <input  type="checkbox"  onchange="document.getElementById('submit').disabled = !this.checked;" /><span><u>
-      Concordo que a LH Irrigação pode utilizar meus dados informados no formulário para entrar em contato comigo e que é de meu interesse</u>
-    </span>
-    <br>
-    <br>
-
-     
-    
-      <button mat-button disabled="true" id="submit" type="submit">Enviar</button> 
-      <img  style="z-index: 10; display: block; position:absolute; width: 200px; height: 200px; right: 40px; bottom: 15px;" src="../assets/images/ctawhats.png">
-    </form>
-    
-  </mat-grid-tile>
-</mat-grid-list>
-
-
-
-
-
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </body>
