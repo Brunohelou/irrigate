@@ -27,7 +27,7 @@ export class AppComponent {
 
 
     console.log(window.innerWidth);
-    this.breakpoint = window.innerWidth / 1000;
+    this.breakpoint = (window.innerWidth <= 700) ? 1:2 ;
     this.breakpoint1 = window.innerWidth / 600;
 
     if (window.innerWidth <= 600) {

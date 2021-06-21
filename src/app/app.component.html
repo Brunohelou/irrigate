@@ -1,11 +1,4 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 
 <!--NAV BAR-->
 
@@ -14,15 +7,15 @@
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 
+  <mat-toolbar style="height:110px; padding: 0; background-color: white; z-index: 5;"></mat-toolbar>
+  <mat-toolbar style="height:110px; padding: 0; background-color: rgba(188, 241, 235, 0.158)ad; position: fixed; z-index: 10; top:0">
 
-  <mat-toolbar style="height:120px; padding: 0; background-color: white;">
 
-
-    <img style="width: calc(75px + 5vw);" src='../assets/images/logo.png ' alt="LH Logo">
+    <img alt="logo" style="width: calc(55px + 5vw);" src='../assets/images/LOGO LUIS PNG.png ' alt="LH Logo">
     <span class="example-spacer"></span>
 
     <div style="margin: 0; padding:0">
-      <a href="#grid1" mat-icon-button class="example-icon favorite-icon"
+      <a href="#inicio" mat-icon-button class="example-icon favorite-icon"
         aria-label="Example icon-button with heart icon">
         Início
       </a>
@@ -31,9 +24,9 @@
         Contato
       </a>
 
-      <a style="margin-right: 20px;" href="#sobre" mat-icon-button class="example-icon"
+      <a style="margin-right: 20px;" href="#quemsomos" mat-icon-button class="example-icon"
         aria-label="Example icon-button with share icon">
-        Sobre
+        Quem Somos
       </a>
     </div>
 
@@ -49,15 +42,16 @@
 
 
   <!--1ST GRID finished (find a coll gif)-->
-  <mat-grid-list cols="1" rowHeight="700px" id="grid1">
+  <mat-grid-list cols="1" rowHeight="700px" id="inicio">
     <mat-grid-tile class="image1" cols=2 style="text-align: center;">
       <div style="width: 85%; vertical-align: middle; height: 70%; display: flex; align-items: center; border-radius: px; background-color: #18a99881; border-style: solid; border-color: white; border-width: 2px;">
         <div style="text-align: center; display: inline-block; vertical-align: middle; width: 100%;">
-        <h1 style="font-size:calc(20px + 1.5vw); margin-bottom: 100px;">Irrigação para Jardins, Agricultura e
-          Despoeiramento</h1>
+        <h1 style="font-size:calc(30px + 1.5vw); margin-bottom: 50px;">Irrigação para jardins, agricultura e
+          despoeiramento</h1>
+          
 
 
-        <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66"
+        <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/LAHELOU%20-%20IRRIGA%C3%87%C3%82O%2008%2001%202021.pdf?alt=media&token=fd247988-662e-44f7-af23-ad9a5f642b94"
           class="cta1" style="margin-right: 0px;">PORTFÓLIO</a>
         <a href="#contato" class="cta2" style="margin-left:20px;">ORÇAMENTO</a>
       </div>
@@ -69,18 +63,21 @@
 
 
   <!--2nd GRID FINISHED-->
-  <mat-grid-list id="grid2" cols="1" [rowHeight]="gridTwo" style="vertical-align: top;">
+  <mat-grid-list id="quemsomos" cols="1" [rowHeight]="gridTwo" style="vertical-align: top;">
     <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
 
       <div style="margin-left: 10%; margin-right: 10%; align-items: baseline!important; width: calc(600px);">
-        <h1 style=" color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw); margin-bottom: 60px; text-align: center;">Quem
-          Somos</h1>
+        
+        <h1 style=" color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw); margin-bottom: 60px; text-align: center;">Irrigação em Sorocaba e região</h1>
+          <h2 style=" color: rgb(73, 73, 73); font-size:calc(10px + 1.0vw); margin-bottom: 60px; text-align: center;">Quem Somos</h2>
+          
+    
 
         <span>
-          A LH Sistemas de Irrigação é uma empresa localizada em Sorocaba-SP (interior de São Paulo) dedicada a
+          A LH Sistemas de Irrigação é uma empresa localizada em Sorocaba - SP (interior de São Paulo) dedicada a
           projetos, instalações e manutenção de sistemas de irrigação.
           Somos representantes da marca RainBird, contando com tecnologias de ponta e com o IoT (internet das coisas)
-          para controloar o seu sistema de irrigação remotamente.
+          para controlar o seu sistema de irrigação remotamente.
           Com essa tecnologia em nosso portfólio, estamos aptos a atender irrigação de paisagismo, campos de futebol,
           golfe, quadras de tênis, agricultura com irrigação de
           baixo volume e despoeiramento de currrais e mineradoras.
@@ -90,7 +87,7 @@
           desenvolvendo o projeto com melhor custo-benefício para a realidade de cada cliente.
         </span>
         <div style="margin-top: 80px; text-align: center;">
-          <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/sample.pdf?alt=media&token=cd41e04d-2557-4b3c-9df2-b0c255059f66"
+          <a href="https://firebasestorage.googleapis.com/v0/b/irrigate-site.appspot.com/o/LAHELOU%20-%20IRRIGA%C3%87%C3%82O%2008%2001%202021.pdf?alt=media&token=fd247988-662e-44f7-af23-ad9a5f642b94"
             class="cta3" style="margin-right: 20px;">PORTFÓLIO</a>
           <a href="#contato" class="cta4" style="margin-left:20px;">ORÇAMENTO</a>
         </div>
@@ -99,17 +96,17 @@
     </mat-grid-tile>
 
 
-
+  
 
   </mat-grid-list>
 
 
   <!--3rd GRID-->
-
+  
 
   <mat-grid-list id="carousel" rowHeight="fit">
     <h1 style=" background-color: #ffffff;  color: rgb(73, 73, 73); font-size:calc(20px + 1.0vw);
-     text-align: center; padding-bottom:10px; padding-top: 10px; margin-bottom: 0;">Cases & Clientes</h1>
+     text-align: center; padding-bottom:2px; padding-top: 10px; margin-bottom: 0;">Cases & Clientes</h1>
 
 
     <carousel cellWidth="100%">
@@ -118,23 +115,22 @@
       <div class="carousel-cell">
         <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit">
           <mat-grid-tile  rowspan="1" style=" text-justify:inter-word; text-align: justify;">
-            <div style="width: 80%; overflow: visible ;">
-              <h2 class="galleryH2">Clube Atlético Sorocaba</h2>
-              <h3>Revisão do sistema de irrigação do campo</h3>
-              <p class="pgllery" >Atlético Sorocaba é um centro de treinamento para equipes de futebol. Quando entraram 
-                em contato estavam com problemas de vazamento e tubulação, equipamentos danificados como a vávula do solenóide e os controladores, ocasionando surpresas
-                indesejadas na hora de realizar a irrigação, causando danos ao gramado e alto custo de manutenção corretiva.
-                Para melhor as condições do campo,
-                instalamos um novo controlador, ralizando a troca de tubulação e substituindo a válvula solenóide. Com
-                isso o clube mantém sempre ótimas condições para os atletas
-                treinarem com custo reduzido para a manutenção do bom estado do gramado.
+     
+            <div style="height: 100%; width: 80%; display: flex; vertical-align: middle; align-items: center;">
+              <div style="width: 100%; overflow: visible; display: inline-block; vertical-align: middle; ">
+              <h2 class="galleryH2">Condomínimo Cyrela Sorocaba</h2>
+              <h3>Implantação do sistema de irrigação completo</h3>
+              <p class="pgllery" >O sistema conta com quatro zonas de irrigação, sensor de chuvas, conexão WIFI para programação a distância, sistema de bombeamento integrado com a cisterna e aspersores para rega das áreas de plantas abertas e gotejamento para os arbustos de canteiros.
+               <br> Os aspersores estão disposto para uma rega eficiente contribuindo para a beleza e saúde das plantas e destacando o trabalho de paisagismo do ambiente.
+                
 
               </p>
             </div>
+            </div>
           </mat-grid-tile>
-          <mat-grid-tile rowspan="1" class="tileImage"><img
-              style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
-              src="../assets/images/atl.jpg">
+          <mat-grid-tile rowspan="1" class="tileImage"><img alt="Projeto Cyrela"
+              style="border-radius: 10px; width: 50%; height: calc(200px + 7vw);   vertical-align:middle; margin-top: 60px;"
+              src="../assets/images/cyrela.jpg">
           </mat-grid-tile>
         </mat-grid-list>
       </div>
@@ -143,22 +139,22 @@
       <div class="carousel-cell">
         <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)">
           <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
-            <div style="width: 80%;">
-              <h2 class="galleryH2">Residência Lago Azul</h2>
-              <h3>Vazamento nos aspersores</h3>
-              <p class="pgllery">O cliente entrou em contato constatando que os aspersores de um campo de futebol
-                particular não estavam funcionando. Após a visita técnica constatamos
-                um gramado seco. Para resolevr o problema, foram implatados os apersores da RainBird, que por sua
-                qualidade permitem o bom funcionamento do equipamento com
-                maior durabilidade.
+            <div style="height: 100%; width: 80%; display: flex; vertical-align: middle; align-items: center;">
+            <div style="width: 100%; overflow: visible; display: inline-block; vertical-align: middle; ">
+              <h2 class="galleryH2">Condomínio IBITI ROYAL Sorocaba</h2>
+              <h3>Implantação do sistema de Irrigação Completo</h3>
+              <p class="pgllery" style="vertical-align: middle;">Implantado sistema de irrigação completo integrado com pressurização das torneiras do jardim, permitindo total flexibilização.
+                <br>Os aspersores foram colocados de forma a permitir a rega eficiente de todos os canteiros e áreas verdes, conferindo beleza e elegância ao paisagismo.
+                
 
               </p>
             </div>
+            </div>
           </mat-grid-tile>
           <mat-grid-tile>
-            <div style="text-align: center;"> <img
-                style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
-                src="../assets/images/LagoAzul.jpeg"></div>
+            <div style="text-align: center;"> <img alt="Projeto Ibiti"
+                style="border-radius: 10px;width: 50%; height: calc(200px + 7vw);   vertical-align:middle; margin-top: 60px;"
+                src="../assets/images/ibiti.jpg"></div>
           </mat-grid-tile>
 
 
@@ -170,24 +166,25 @@
       <div class="carousel-cell">
         <mat-grid-list class="myGridList" [cols]="breakpoint" rowHeight="fit" (window:resize)="onResize($event)">
           <mat-grid-tile style=" text-justify:inter-word; text-align: justify;">
-            <div style="width: 80%;">
-              <h2 class="galleryH2"> Residencial Vale do Lago</h2>
-              <h3>Vazamento nos aspersores</h3>
-              <p class="pgllery">O cliente entrou em contato dizendo que seu sistema hidráulico apresentava falta de
-                água para fazer seu sistema de irrigação funcionar, sendo necessário
-                irrigar com trabalho braçal constantemente. Ao realizar a visita técnica, constatamos que o controlador
-                estava queimado, mas além disso o sistema hdiráulico estava com ar
-                na tubulação, o que foi corrigido na hora. Para resolver o problema do controlador, foi feita a
-                substituição por um da marca RainBird setorizado,
-                possibilitando o acionamento em difrentes setores separadamente, automatizando a irrigação.
+            <div style="height: 100%; width: 80%; display: flex; vertical-align: middle; align-items: center;">
+              <div style="width: 100%; overflow: visible; display: inline-block; vertical-align: middle; ">
+              <h2 class="galleryH2">Campo de Futebol Atlético Sorocaba</h2>
+              <h3>Revisão do sistema de irrigação do campo</h3>
+              <p class="pgllery">Atlético Sorocaba é um centro de treinamento para equipes de futebol.
+                 O campo apresentava vazamentos, equipamentos danificados
+                  como a vávula do solenóide e os controladores, ocasionando surpresas indesejadas na hora de
+                   realizar a irrigação, causando danos ao gramado e alto custo de manutenção corretiva.<br>
+                    Para melhorar as condições do campo, instalamos um novo controlador, ralizando
+                     a troca de tubulação e substituindo a válvula solenóide.
 
               </p>
             </div>
+            </div>
           </mat-grid-tile>
           <mat-grid-tile>
-            <div style="text-align: center;"> <img
-                style="border-radius: 10px; width: 60%; height: calc(200px + 10vw);   vertical-align:middle; margin-top: 60px;"
-                src="../assets/images/casaRoberto.jpeg"></div>
+            <div style="text-align: center;"> <img alt="Projeto Campo Atletico"
+                style="border-radius: 10px; width: 50%; height: calc(200px + 7vw);   vertical-align:middle; margin-top: 60px;"
+                src="../assets/images/atl.jpg"></div>
           </mat-grid-tile>
 
 
@@ -257,7 +254,7 @@
     <mat-grid-tile class="row" style="text-align: center;">
 
       <form style="color: white;" action="https://formspree.io/f/mvovedlv" method="POST">
-        <h1 style="text-align: center; font-size:calc(20px + 1.5vw);">Entre em Contato!</h1>
+        <h2 style="text-align: center; font-size:calc(20px + 1.5vw);">Entre em Contato!</h2>
         <label style="color: white;" for="fname">Nome</label><br>
         <input class="inputData" type="text" id="nome" name="nome"><br>
 
@@ -295,21 +292,17 @@
   <!--Footer-->
 
   <div *ngIf="phone" id="footer">
-    <div style="float: left;">
-      <img style="width: auto; height: 60%;" src='../assets/images/logo.png ' alt="LH Logo">
-      <p>CNPJ: xxxxxxx/xxxx</p>
+    <div style="float: none;">
+      <img  style="width: auto; height: 60%;" alt="logo" src='../assets/images/LOGO LUIS PNG.png ' alt="LH Logo">
+      <p>CNPJ: 12.856.575/0001-90</p>
     </div>
     <div style="float: none;">
       <h2>FALE CONOSCO</h2>
-      <p>Celular: (15) 99702-6211</p>
-      <p>Email: lhelou@irriga.com</p>
-      <p>Endereço:Rua Castanheira, Votorantim, Jardim Aldeia da Mata, 18116-745</p>
+      <p>Telefone: (15) 99720-2222</p>
+      <p>Email: heloueng@gmail.com</p>
+      <p>Endereço: Rua Castanheira, Votorantim, Jardim Aldeia da Mata, 18116-745</p>
     </div>
-    <div style="float: right;">
-      <h2>Social media</h2>
-
-      <p><a href="" style="text-decoration: none; color: white;"> <u>Instagram</u></a></p>
-    </div>
+   
 
 
     <p><a href="https://github.com/Brunohelou" style="text-decoration: none; color: white;"><u>Desenvolvido por: Bruno
@@ -318,13 +311,7 @@
 
 
 
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-  <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 
   <router-outlet></router-outlet>
 </body>
